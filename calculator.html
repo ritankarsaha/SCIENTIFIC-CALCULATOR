@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Scientific Calculator - By RITANKAR SAHA</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="screen" placeholder="0" />
+            <div>
+
+                <button onclick="sin()" class="trigo"> sin x </button>
+                <button onclick="cos()" class="trigo"> cos x </button>
+                <button onclick="tan()" class="trigo"> tan x </button>
+                <button onclick="degrees_to_radians ()" class="operator"> rad </button>
+                <button onclick="reverse()" class="operator"> 1/x </button>
+                <button onclick="toDegrees ()" class="operator" style="width: 63px;"> deg </button>
+                <button onclick="check()" class="operator"> +/- </button>
+            </div>
+            <div>
+                <button onclick="sinInverse()" class="trigo" style="width: auto;">sin<span
+                        style="position: relative; bottom: .4em; right: .1em;">-1</span> x</button>
+                <button onclick="log()" class="operator"> log </button>
+                <button onclick="findNthRoot()" class="operator"><span
+                        style="position: relative; bottom: .4em; right: .1em;">n</span>√</button>
+                <button class="button operator"> ( </button>
+                <button class="button operator"> ) </button>
+                <button onclick="mod()" class="operator"> |x| </button>
+                <button onclick="nthPower()" class="operator"> x <span
+                        style="position: relative; bottom: .4em; right: .1em;">n</span> </button>
+            </div>
+            <div>
+                <button onclick="cosInverse()" class="trigo" style="width: auto;">cos<span
+                        style="position: relative; bottom: .4em; right: .1em;">-1</span> x</button>
+                <button onclick="fact()" class="operator"> x! </button>
+                <button id="ac" onclick="allclear()" class="specialkey"> AC </button>
+                <button id="ce" onclick="backspc()" class="specialkey"> DEL </button>
+                <button class="button operator"> % </button>
+                <button onclick="cosec()" class="trigo"> csc x </button>
+                <button class="button operator"> ÷ </button>
+            </div>
+            <div>
+                <button onclick="tanInverse()" class="trigo" style="width: auto;">tan<span
+                        style="position: relative; bottom: .4em; right: .1em;">-1</span> x</button>
+                <button class="operator" onclick="pow()">x <span
+                        style="position: relative; bottom: .4em; right: .1em;">2</span>
+                </button>
+                <button class="button"> 7 </button>
+                <button class="button"> 8 </button>
+                <button class="button"> 9 </button>
+                <button onclick="sec()" class="trigo"> sec x </button>
+                <button class="button operator"> x </button>
+            </div>
+            <div>
+                <button onclick="cosecInverse()" class="trigo" style="width: auto;">csc<span
+                        style="position: relative; bottom: .4em; right: .1em;">-1</span> x</button>
+                <button onclick="sqrt()" class="operator"> √ </button>
+                <button class="button"> 4 </button>
+                <button class="button"> 5</button>
+                <button class="button"> 6 </button>
+                <button onclick="cot()" class="trigo"> cot x </button>
+                <button class="button operator">-</button>
+            </div>
+            <div>
+                <button onclick="secInverse()" class="trigo" style="width: auto;">sec<span
+                        style="position: relative; bottom: .4em; right: .1em;">-1</span> x</button>
+                <button onclick="pi()" class="operator"> π </button>
+                <button class="button"> 1 </button>
+                <button class="button"> 2 </button>
+                <button class="button"> 3 </button>
+                <button onclick="permutation()" class="stat"> per </button>
+                <button class="button operator">+</button>
+            </div>
+            <div>
+                <button onclick="cotInverse()" class="trigo" style="width: auto;">cot <span
+                        style="position: relative; bottom: .4em; right: .1em;">-1</span> x</button>
+                <button onclick="e()" class="operator"> e </button>
+                <button class="button"> 00 </button>
+                <button class="button"> 0 </button>
+                <button class="button"> . </button>
+                <button onclick="combination()" class="stat"> comb </button>
+                <button class="equalBtn" id="eval" onclick="equality()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
